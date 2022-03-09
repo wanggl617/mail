@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.mail</groupId>
-    <artifactId>mail</artifactId>
+    <artifactId>ware</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>mail</name>
     <description>Demo project for Spring Boot</description>
@@ -15,6 +15,6 @@
         <module>member</module>
         <module>order</module>
         <module>product</module>
-        <module>renren-fast</module>
+        <module>ware</module>
     </modules>
 </project>
