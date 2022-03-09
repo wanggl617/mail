@@ -4,17 +4,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.mail</groupId>
-    <artifactId>ware</artifactId>
+    <artifactId>mail</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>mail</name>
     <description>Demo project for Spring Boot</description>
     <packaging>pom</packaging>
-
+<!--xx-->
     <modules>
         <module>coupon</module>
         <module>member</module>
         <module>order</module>
         <module>product</module>
-        <module>ware</module>
+        <module>renren-fast</module>
     </modules>
 </project>
