@@ -7,7 +7,7 @@
         <groupId>com.mail</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>com.mail</groupId>
+    <groupId>coupon</groupId>
     <artifactId>coupon</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>coupon</name>
