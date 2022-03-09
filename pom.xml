@@ -15,7 +15,10 @@
         <module>member</module>
         <module>order</module>
         <module>product</module>
+        <module>ware</module>
         <module>renren-fast</module>
+        <module>renren-generator</module>
+        <module>mail-common</module>
     </modules>
 
     <properties>
@@ -60,6 +63,13 @@
                 <scope>import</scope>
             </dependency>
             <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>2.2.6.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>${spring-cloud.version}</version>
@@ -71,6 +81,7 @@
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql.version}</version>
             </dependency>
+
         </dependencies>
     </dependencyManagement>
 
