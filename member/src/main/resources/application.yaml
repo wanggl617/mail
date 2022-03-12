@@ -17,10 +17,8 @@ mybatis-plus:
   global-config:
     db-config:
       id-type: auto  #设置主键自增
-<<<<<<< HEAD
-#feign:
-#  hystrix:
-#    enabled: true
-=======
 
->>>>>>> origin/master
+feign:
+  hystrix:
+    enabled: true
+

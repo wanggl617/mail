@@ -3,10 +3,6 @@ package com.mail.member;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-<<<<<<< HEAD
-import org.springframework.cloud.netflix.hystrix.EnableHystrix;
-=======
->>>>>>> origin/master
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
@@ -17,18 +13,16 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  *      3).声明接口的每一个方法都是调用远程服务的哪一个请求
  *      4).开启远程调用功能
  */
-@EnableFeignClients("com.mail.member.feign")
-@SpringBootApplication
-@EnableDiscoveryClient
+
 //@EnableHystrix
-=======
+/**
  *      3).声明接口的每一个方法都是调用 远程服务的哪一个请求
  *      4).开启远程调用功能
  */
-@EnableFeignClients(basePackages = "com.mail.member.feign")
+
+@EnableFeignClients("com.mail.member.feign")
 @SpringBootApplication
 @EnableDiscoveryClient
->>>>>>> origin/master
 public class MemberApplication {
     public static void main(String[] args) {
         SpringApplication.run(MemberApplication.class);
