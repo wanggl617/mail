@@ -1,6 +1,7 @@
 package com.mail.member.feign;
 
 import com.mail.common.utils.R;
+<<<<<<< HEAD
 import com.mail.member.feign.Impl.CouponFeignServiceFallback;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
@@ -8,6 +9,13 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 //@Component
 @FeignClient(value="mail-coupon",fallback = CouponFeignServiceFallback.class)
+=======
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@FeignClient("mail-coupon")
+>>>>>>> origin/master
 //告诉SpringCloud 这个模块要调用哪个远程服务
 public interface CouponFeignService {
 

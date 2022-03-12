@@ -5,9 +5,13 @@ import java.util.Map;
 
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
 import com.mail.member.feign.CouponFeignService;
+<<<<<<< HEAD
 import com.mail.member.feign.Impl.CouponFeignServiceFallback;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.openfeign.FeignClient;
+=======
+import org.springframework.beans.factory.annotation.Autowired;
+>>>>>>> origin/master
 import org.springframework.web.bind.annotation.*;
 
 import com.mail.member.entity.MemberEntity;
@@ -15,7 +19,10 @@ import com.mail.member.service.MemberService;
 import com.mail.common.utils.PageUtils;
 import com.mail.common.utils.R;
 
+<<<<<<< HEAD
 import javax.annotation.Resource;
+=======
+>>>>>>> origin/master
 
 
 /**
@@ -28,6 +35,7 @@ import javax.annotation.Resource;
 @RestController
 @RequestMapping("member/member")
 public class MemberController {
+<<<<<<< HEAD
     private final MemberService memberService;
     @Resource
     private CouponFeignService couponFeignService;
@@ -36,10 +44,17 @@ public class MemberController {
         this.memberService = memberService;
     }
 
+=======
+    @Autowired
+    private MemberService memberService;
+    @Autowired
+    private CouponFeignService couponFeignService;
+>>>>>>> origin/master
     /**
      *  测试 调用远程服务
      */
     @GetMapping("/coupons")
+<<<<<<< HEAD
 
     public R test_coupon(){
         return couponFeignService.membercoupon();
@@ -47,6 +62,13 @@ public class MemberController {
 //        memberEntity.setNickname("我是会员");
 //        R membercoupon = couponFeignService.membercoupon();
 //        return R.ok().put("mebmer",memberEntity).put("coupons",membercoupon.get("coupon"));
+=======
+    public R test_coupon(){
+        MemberEntity memberEntity = new MemberEntity();
+        memberEntity.setNickname("我是会员");
+        R membercoupon = couponFeignService.membercoupon();
+        return R.ok().put("memver",memberEntity).put("coupons",membercoupon.get("coupon"));
+>>>>>>> origin/master
     }
 
     /**

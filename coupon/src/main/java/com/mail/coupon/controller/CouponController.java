@@ -5,8 +5,11 @@ import java.util.Map;
 
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
+<<<<<<< HEAD
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
+=======
+>>>>>>> origin/master
 import org.springframework.web.bind.annotation.*;
 
 import com.mail.coupon.entity.CouponEntity;
@@ -23,6 +26,7 @@ import com.mail.common.utils.R;
  * @email sunlightcs@gmail.com
  * @date 2022-03-10 14:07:33
  */
+<<<<<<< HEAD
 @RefreshScope
 @RestController
 @RequestMapping("coupon/coupon")
@@ -36,6 +40,11 @@ public class CouponController {
         return R.ok().put("hystrix",hystrixTime);
     }
 
+=======
+@RestController
+@RequestMapping("coupon/coupon")
+public class CouponController {
+>>>>>>> origin/master
     @Autowired
     private CouponService couponService;
     @GetMapping("/member/list")
